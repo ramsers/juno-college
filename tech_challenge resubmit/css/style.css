@@ -1,0 +1,1493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    overflow-x: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 4% repeat(36,1.52778%) 4%;
+    grid-column-gap: 1%;
+    padding: 40px 0 0 0;
+}
+
+header {
+    padding: 24px 0 0 0;
+}
+
+.nav-wrapper {
+    grid-column: 1/-2;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 300px;
+    height: 60px;
+    margin: 0 2rem 0 0;
+}
+
+.site-links {
+    display: flex;
+    margin-right: auto;
+    /* align-items: center; */
+}
+
+.site-links a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+.site-links a:hover {
+    border: 1px solid #D64C31;
+    background: #D64C31;
+    color: #fff;
+}
+
+/* Hero Area Style */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    max-height: 900px;
+}
+
+.image-wrapper {
+    grid-column: 1/-1;
+    position: relative;
+}
+
+.hero-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.hero-msg {
+    grid-column: 1/19;
+    position: relative;
+    padding: 3rem 2.5rem 3rem;
+    background: #D64C31;
+    top: -23rem;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .5s ease-in-out;
+}
+
+.hero-msg-effect {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.hero-msg:hover {
+    -webkit-box-shadow: 15px 17px 28px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 15px 17px 28px 0px rgba(255,255,255,1);
+    box-shadow: 15px 17px 28px 0px rgba(255,255,255,1);
+}
+
+.hero-msg h1 {
+    color: #fff;
+    font-size: 84px;
+    font-weight: 500;
+    font-family: "Cormorant Garamond", sans-serif;
+    padding: 0 0 .1rem 0;
+}
+
+.hero-msg p {
+    font-size: 1.38rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* Welcome Area Style */
+
+.welcome-area {
+    position: absolute;
+    background: #E8F1EE;
+    right: 0;
+    width: 96%;
+    padding-bottom: 1.8rem;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    transform: translateX(96%);
+}
+
+.welcome-section-expand {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.welcome-area h2 {
+    font-size: 4.7rem;
+    position: absolute;
+    grid-column: 2/-1;
+    font-weight: 500;
+}
+
+.welcome-wrapper {
+    width: 96%;
+}
+
+.welcome-area img {
+    grid-column: 2/-1;
+    width: 80%;
+    padding: 5rem 0 1rem 0
+}
+
+
+.welcome-area .welcome {
+    grid-column: 2/-1;
+}
+
+.welcome-hdr {
+    grid-column: 2/-1;
+    color: #4A455C;
+}
+
+.date {
+    font-size: 1.25rem;
+    color: #D64C31;
+}
+
+.course-desc{
+    margin-top: .5rem;
+    font-size: 2.55rem;
+    font-weight: 500;
+    color: #4A455C;
+}
+
+.arrows {
+    width: 100%;
+    position: relative;
+    grid-column: 28/-6;
+    top: 7rem;
+    background: #EA5A3F;
+    padding: 1rem;
+}
+
+#left, #right {
+    font-size: 2.8rem;
+    color: #fff;
+    transition: color .3s ease-in-out;
+}
+
+#left {
+    margin-right: 4.9rem;
+}
+
+#left:hover, #right:hover {
+    color: #4A455C;
+}
+
+.spacer {
+    width: 100%;
+    padding-top: 53rem;
+}
+
+/* Course Info Styles */
+
+.course-brkdwn {
+    margin-bottom: 10rem;
+}
+
+.course-info {
+grid-column: 1/-1;
+}
+
+.course-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3.53%;
+    grid-row-gap: 3.53%;
+}
+
+.course-content .image-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper div {
+    width: 100%;
+    padding-bottom: 133%;
+}
+
+.course-content .image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-content h4 {
+    font-size: 75px;
+    font-weight: 500;
+    font-family: "Cormorant Garamond", sans-serif;
+    color: #D64C31;
+}
+
+.course-content span {
+    font-weight: 500;
+}
+
+.course-content p {
+    line-height: 3.2rem;
+}
+
+.web-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.web-dev-roll {
+    opacity: 1;
+    transform: translateX(0);
+}
+.js-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.js-roll {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.web-hdr {
+    width: 100%;
+    min-width: 100px;
+    max-height: 220px;
+}
+
+.web-hdr img {
+    min-width: 100%;
+}
+
+.web-info{
+    padding: 4rem 3rem 1.5rem;
+    background: #FFF0E7;
+    min-height: 19rem;
+    margin-top: 9.5rem;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0; 
+    transition: all .7s ease-in-out;
+    transform: translateX(100%);
+}
+
+.team-roll {
+    opacity: 1;
+    transform: translateX(0);
+}
+.student-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    transform: translateX(100%);
+}
+
+.student-roll {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.team-hdr {
+    width: 100%;
+    min-width: 100px;
+    max-height: 220px;
+}
+
+.team-hdr img {
+    min-width: 100%;
+}
+
+.team-info {
+    padding: 4rem 3rem 1.5rem;
+    background: #FFF0E7;
+    min-height: 19rem;
+    margin-top: 9.5rem;
+}
+
+/* Footer Styles */
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #D64C31;
+    max-height: 456px;
+}
+
+.footer-info {
+    grid-column: 1/25;
+    width: 68%;
+}
+
+.footer-info img {
+    padding-bottom: 2rem;
+}
+
+.footer-info h4 {
+    color: #fff;
+    padding-bottom: 1.1rem;
+    font-size: 1.9rem;
+}
+
+.footer-info p {
+    color: #fff;
+    font-size: 1.4rem;
+    padding-bottom: 1.3rem;
+    line-height: 2rem;
+}
+.footer-info ul {
+    padding-bottom: 2rem;
+    display: flex;
+}
+
+.footer-info li {
+    padding-right: 1rem;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-hover {
+    transition: all .2s ease-in-out;
+}
+
+.footer-hover:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.footer-info .copyright {
+    color: #fff;
+}
+
+#email {
+    grid-column: 37/25;
+    background: #4A455C;
+    position: relative;
+    margin-top: -5rem;
+    height: 469px;
+    padding: 5rem 3rem 1.5rem;
+}
+
+#email h4 {
+    color: #fff;
+    padding-bottom: 1.5rem;
+    font-size: 1.9rem;
+}
+
+input[type="text"] {
+    padding: .7rem;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    border: 1px solid #fff;
+}
+
+input[type="text"]:focus {
+    border-color: #D64C31;
+}
+
+input[type="submit"] {
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background: #FFF0E7;
+    border: 1px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover {
+    background: #D64C31;
+    color: #fff;
+}
+
+#email p {
+    color: #fff;
+    margin-bottom: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-right: 1.8rem;
+    transition: color .3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #D64C31;
+}
+
+/* Mobile Styles */
+
+@media screen and (min-width:320px) and (max-width:414px){
+    nav img {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+
+    .site-links a {
+        font-size: 1.1rem;
+        padding: 1rem .8rem;
+        margin: 1rem 0;
+    }
+
+    .nav-container {
+        flex-flow: row wrap;
+    }
+
+    .hero {
+        padding-top: 1rem;
+        height: 250px;
+    }
+
+    .hero-msg {
+        top: -5.5rem;
+        padding: 1rem 1rem 1rem;
+    }
+    .hero-msg h1 {
+        font-size: 1.2rem;
+    }
+    .hero-msg p {
+        font-size: .33rem;
+    }
+
+    .welcome-hdr h2 {
+        font-size: 2.7rem;
+    }
+
+    .welcome-area img {
+        padding: 4rem 0 1rem 0;
+        margin-top: 2rem;
+    }
+    .arrows {
+        padding: .3rem;
+        grid-column: 29/-2;
+    top: 7rem;
+    }
+    #left {
+        margin-right: 0.7rem;
+    }
+    #left, #right {
+        font-size: 1.2rem;
+    }
+
+    .course-brkdwn {
+        padding-top: .5rem;
+    }
+    .course-content {
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 1.53%;
+        width: 100vw;
+    }
+    .date {
+        font-size: .8rem;
+    }
+    .course-desc {
+        font-size: .8rem;
+    }
+    .spacer {
+        padding-top: 25rem;
+    }
+    .web-card {
+        width: 100%;
+    }
+    .web-hdr {
+        width: 100%;
+    }
+
+    .web-hdr .img-wrapper {
+        height:181px;
+    }
+
+    .team-hdr .img-wrapper {
+        height:170px ;
+    }
+    .web-hdr img {
+        width: 100%;
+    }
+    .web-info {
+        margin-top: 0;
+        padding: 2rem 2rem 1.5rem 3rem;
+        min-height: 16rem;
+    }
+    .team-card {
+        width: 100%;
+    }
+    .team-hdr {
+        width: 100%;
+    }
+
+    .team-hdr img {
+        width: 100%;
+    }
+    .team-info {
+        margin-top: 0;
+        padding: 2rem 2rem 1.5rem 3rem;
+        min-height: 16rem;
+    }
+    
+    .course-content h4 {
+        font-size: 2rem;
+        margin-top: .3rem;
+    }
+    .course-content p {
+        font-size: 1rem;
+        line-height: 2.2rem;
+    }
+
+    footer {
+        max-height: 313px;
+    }
+
+   .footer-info {
+    grid-column: 2/27;
+   }
+
+    .footer-info img {
+        width: 116px;
+        padding-bottom: .8rem;
+    }
+
+    .footer-info h4 {
+        font-size: 1rem;
+    }
+
+    .footer-info p {
+        color: #fff;
+        font-size: .6rem;
+        padding-bottom: .7rem;
+        line-height: 1.2rem;
+    }
+    .footer-info ul {
+        font-size: 0.4rem;
+        padding-bottom: .5rem;
+    }
+    .footer-info li {
+        padding-right: .5rem;
+    }
+    .footer-info .copyright {
+        font-size: .4rem;
+    }
+    #email {
+        grid-column: 40/19;
+        background: #4A455C;
+        position: relative;
+        margin-top: -20rem;
+        height: 322px;
+        padding: 4rem 1rem 0.5rem;
+        left: 0;
+    }
+
+    #email h4 {
+        font-size: 1rem;
+    }
+    #email p {
+        line-height: 1.1rem;
+        font-size: .5rem;
+        margin-bottom: .8rem;
+    }
+    input[type="text"] {
+        font-size: .5rem;
+    }
+    input[type="submit"] {
+        font-size: .5rem;
+    }
+    .social-icons a {
+        font-size: 0.8rem;
+        margin-right: 0.7rem;
+    }
+}
+
+
+
+@media screen and (width:415px) and (width:618px) {
+    #email h4 {
+        color: #fff;
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+    #email p {
+        line-height: 2rem;
+        font-size: .7rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:411px) and (max-width:767px){
+    .nav-container {
+        flex-flow: column;
+    }
+    nav img {
+        margin: 0 3.5rem 0 3.5rem;
+    }
+
+    .site-links {
+        display: flex;
+        margin: 1rem auto;
+    }
+    
+    .site-links a {
+        font-size: 1.1rem;
+        padding: 1rem 1.5rem;
+        margin: 1rem 0;
+    }
+    .hero-msg {
+        top: -6.9rem;
+        padding: 1rem 1rem 1rem;
+    }
+
+    .hero-msg h1 {
+        font-size: 3rem;
+    }
+    .hero-msg p {
+        font-size: 0.4rem;
+    }
+
+    .welcome-area h2 {
+        font-size: 3.7rem;
+        position: absolute;
+        grid-column: 2/-1;
+        font-weight: 500;
+    }
+    .arrows {
+        padding: .3rem;
+        grid-column: 28/-5;
+        top: 7rem;
+    }
+    .course-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 3.53%;
+        grid-row-gap: 1.33%;
+    }
+    .web-info {
+        padding: 2rem 3rem 0.5rem;
+        background: #FFF0E7;
+        min-height: 17rem;
+        margin-top: 3.5rem;
+    }
+    .team-info {
+        padding: 2rem 3rem 0.5rem;
+        background: #FFF0E7;
+        min-height: 17rem;
+        margin-top: 3.5rem;
+    }
+    .footer-info img {
+        padding-bottom: 1rem;
+    }
+    .footer-info h4 {
+        color: #fff;
+        padding-bottom: 1.1rem;
+        font-size: 1.5rem;
+    }
+    .footer-info {
+        grid-column: 2/27;
+    }
+    .footer-info ul {
+        font-size: 1rem;
+    }
+    .footer-info p {
+        color: #fff;
+        font-size: .9rem;
+        padding-bottom: 1.3rem;
+        line-height: 2rem;
+    }
+    .footer-info .copyright {
+        font-size: .9rem;
+    }
+    
+        #email {
+            grid-column: 40/19;
+            background: #4A455C;
+            position: relative;
+            margin-top: -25rem;
+            height: 410px;
+            padding: 4rem 1rem 0.5rem;
+            left: 0;
+        }
+    }
+    
+    #email p {
+        line-height: .8rem;
+        font-size: .7rem;
+        margin-bottom: .8rem;
+    }
+    .footer-info ul {
+        font-size: 0.6rem;
+    }
+    .footer-info .copyright {
+        font-size: .5rem;
+    }
+
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .nav-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+    nav img {
+        width: 300px;
+        height: 60px;
+        margin: 0 .5rem 0 0;
+    }
+    .site-links {
+        display: flex;
+        margin: 1rem auto;
+    }
+    .site-links a {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 0 1rem;
+        text-decoration: none;
+        color: #000;
+        transition: all .3s ease-in-out;
+    }
+    .hero {
+        height: 500px;
+    }
+    .hero-msg {
+        top: -13rem;
+        padding: 1rem 2.5rem 1rem;
+    }
+    .hero-msg h1 {
+        font-size: 2.6rem;
+    }
+    .hero-msg p {
+        font-size: .8rem;
+        line-height: 1.8;
+        color: #fff;
+    }
+    .welcome-area img {
+        grid-column: 2/-1;
+        width: 80%;
+        padding: 5rem 0 1rem 0;
+    }
+    .arrows {
+        grid-column: 29/-5;
+    }
+    #left {
+        margin-right: .7rem;
+    }
+    #left, #right {
+        font-size: 1.8rem;
+    }
+    .course-desc {
+        font-size: 1.5rem;
+    }
+    .spacer {
+        padding-top: 38rem;
+    }
+    .course-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 3.53%;
+        grid-row-gap: 1.33%;
+    }
+    .web-info {
+        padding: 2rem 3rem 0.5rem;
+        background: #FFF0E7;
+        min-height: 17rem;
+        margin-top: 9.5rem;
+    }
+    .team-info {
+        padding: 2rem 3rem 0.5rem;
+        background: #FFF0E7;
+        min-height: 17rem;
+        margin-top: 9.5rem;
+    }
+    .footer-info img {
+        padding-bottom: 1rem;
+    }
+    .footer-info h4 {
+        color: #fff;
+        padding-bottom: 1.1rem;
+        font-size: 1.5rem;
+    }
+    .footer-info {
+        grid-column: 2/27;
+    }
+    .footer-info ul {
+        font-size: 1rem;
+    }
+    .footer-info p {
+        color: #fff;
+        font-size: .9rem;
+        padding-bottom: 1.3rem;
+        line-height: 2rem;
+    }
+    .footer-info .copyright {
+        font-size: .9rem;
+    }
+    #email {
+        grid-column: 39/19;
+        background: #4A455C;
+        position: relative;
+        margin-top: -27rem;
+        height: 459px;
+        padding: 5rem 3rem 1.5rem;
+    }
+    #email p {
+        color: #fff;
+        margin-bottom: 1.6rem;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 790px) and (max-width:1023px) {
+    #email p {
+        color: #fff;
+        margin-bottom: 3.8rem;
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+    .hero {
+        height: 531px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width:1199px) {
+    .nav-container {
+        margin: 0 1rem;
+    }
+    .hero {
+        height: 720px;
+    }
+    .hero-msg {
+        top: -17rem;
+    }
+    .hero-msg h1 {
+        font-size: 4.1rem;
+    }
+    .hero-msg p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #fff;
+    }
+    .arrows {
+        grid-column: 29/-5;
+    }
+    #left {
+        margin-right: 0.9rem;
+    }
+    .spacer {
+        width: 100%;
+        padding-top: 45rem;
+    }
+    .web-info, .team-info {
+            padding: 4rem 3rem 1.5rem;
+            background: #FFF0E7;
+            min-height: 19rem;
+            margin-top: 3.5rem;    
+    }
+    .course-content h4 {
+        font-size: 3.3rem;
+    }
+    .footer-info {
+        grid-column: 2/25;
+        width: 68%;
+    }
+    .footer-info img {
+        padding-bottom: 1rem;
+    }
+    
+    .footer-info ul {
+        padding-bottom: 1rem;
+        display: flex;
+        font-size: 1rem;
+    }
+    
+    .footer-info .copyright {
+        color: #fff;
+        font-size: 1rem;
+    }
+    
+    #email {
+        grid-column: 37/21;
+        background: #4A455C;
+        position: relative;
+        margin-top: -28rem;
+        height: 473px;
+        padding: 5rem 3rem 1.5rem;
+    }
+    #email p {
+        line-height: 2.2rem;
+        font-size: 1.3rem;
+        margin-bottom: 2.8rem;
+    }
+}
+
+
+/* @media screen and (min-width: 1025px) and (max-width: 1199px) {
+    .nav-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0rem 7rem 0rem 7rem;
+    }
+} */
+
+@media screen and (min-width: 1200px) and (max-width:1535px) {
+    .wrapper {
+        background-color: #fff;
+        min-width: 320px;
+        max-width: 1400px;
+        margin: 0 2rem;
+    }
+    
+    .hero-msg {
+        grid-column: 1/19;
+        position: relative;
+        padding: 3rem 2.5rem 3rem;
+        background: #D64C31;
+        top: -19rem;
+        transition: all .3s ease-in-out;
+    }
+    
+    .hero-msg h1 {
+        color: #fff;
+        font-size: 4.7rem;
+        font-weight: 500;
+        font-family: "Cormorant Garamond", sans-serif;
+        padding: 0 0 .1rem 0;
+    }
+    
+    .hero-msg p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #fff;
+    }
+    
+    .arrows {
+        width: 100%;
+        position: relative;
+        grid-column: 28/-5;
+        top: 7rem;
+        background: #EA5A3F;
+        padding: 1rem;
+    }
+    
+    #left {
+        margin-right: 4.2rem;
+    }
+    
+    .web-info {
+        padding: 4rem 3rem 1.5rem;
+        background: #FFF0E7;
+        min-height: 19rem;
+        margin-top: 5.5rem;
+    }
+    
+    
+    .team-info {
+        padding: 4rem 3rem 1.5rem;
+        background: #FFF0E7;
+        min-height: 19rem;
+        margin-top: 5.5rem;
+    }
+    
+    .course-content h4 {
+        font-size: 3.7rem;
+        font-weight: 500;
+        font-family: "Cormorant Garamond", sans-serif;
+        color: #D64C31;
+    }
+    
+    #email {
+        grid-column: 38/25;
+        background: #4A455C;
+        position: relative;
+        margin-top: -5rem;
+        height: 493px;
+        padding: 4rem 3rem 1.5rem;
+    }
+    
+    #email p {
+        color: #fff;
+        margin-bottom: 1.6rem;
+        line-height: 2.2rem;
+        font-size: 1.2rem;
+    }
+    
+    .footer-info {
+        grid-column: 2/25;
+        width: 68%;
+    }
+    
+    .footer-info img {
+        padding-bottom: 1.1rem;
+    }
+    
+    .footer-info p {
+        color: #fff;
+        font-size: 1.2rem;
+        padding-bottom: 1.3rem;
+        line-height: 2rem;
+    }
+    
+    .footer-info ul {
+        padding-bottom: 2.4rem;
+        display: flex;
+        font-size: 1.2rem;
+    }
+    .footer-info .copyright {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1405px) and (max-width: 1535px) {
+    .arrows {
+        grid-column: 28/-6;
+    }
+}
+@media screen and (min-width:1469px) and (max-width: 1491px) {
+    .wrapper {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width:618px) {
+    .footer-info ul {
+        padding-bottom: .9rem;
+    }
+    #email {
+        margin-top: -27rem;
+        height: 431px;
+    }
+    #email h4 {
+        font-size: 1.2rem;
+    }
+    #email p {
+        line-height: 2rem;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    input[type="text"] {
+        font-size: .8rem;
+    }
+    input[type="submit"] {
+        font-size: .8rem;
+    }
+    .social-icons a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 610px) {
+    #email {
+        margin-top: -27rem;
+        height: 431px;
+    }
+
+    #email p {
+        font-size: 1rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 489px) {
+    .footer-info ul {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (min-width:343px) and (max-width:489px) {
+    #email {
+        margin-top: -20rem;
+    height: 322px;
+    }
+}
+
+@media screen and (min-width:619px) and (max-width: 766px) {
+    #email p {
+        color: #fff;
+        margin-bottom: 1.8rem;
+        line-height: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 765px) {
+    .hero-msg {
+        top: -8.9rem;
+        padding: 1rem 1rem 1rem;
+    }
+}
+@media screen and (min-width:680px) and (max-width: 767px) {
+    .hero-msg{
+        margin-top: -4rem;
+    }
+    .hero-msg p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width:877px) and (max-width: 1009px) {
+    .hero {
+        height: 580px
+    }
+}
+
+@media only screen and (width: 320px) {
+    .site-links a {
+        padding: 1rem .75rem;
+    }
+    .footer-info .copyright {
+        font-size: .3rem;
+    }
+    #email {
+        grid-column: 40/19;
+        background: #4A455C;
+        position: relative;
+        margin-top: -21rem;
+        height: 335px;
+        padding: 4rem 1rem 0.5rem;
+        left: 0;
+    }
+}
+
+@media only screen and (width:360px){
+    nav img {
+        margin: 0 1.5rem 0 1.5rem;
+    }
+    .site-links a {
+        padding: 1rem 1.05rem;
+    }
+    .hero-msg {
+        top: -6rem;
+        padding: 1rem 1rem 1rem;
+    }
+    .hero-msg p {
+        font-size: .37rem;
+    }
+    .arrows {
+        grid-column: 29/-3;
+    }
+    .course-desc {
+        font-size: .9rem;
+    }
+    .footer-info ul {
+        font-size: 0.45rem;
+    }
+    .footer-info .copyright {
+        font-size: .45rem;
+    }
+}
+
+@media only screen and (width:375px){
+    nav img {
+        margin: 0 2.5rem 0 2.5rem;
+    }
+    .site-links a {
+        padding: 1rem 1.2rem;
+    }
+    .hero-msg {
+        top: -6.5rem;
+        padding: 1rem 1rem 1.3rem;
+    }
+    .hero-msg p {
+        font-size: .38rem;
+    }
+    .arrows {
+        padding: .43rem;
+        grid-column: 28/-4;
+        top: 7rem;
+    }
+    .course-desc {
+        font-size: .9rem;
+    }
+    .content-wrapper {
+        padding-top: 1.1rem !important;
+    }
+    #email {
+        padding: 4.7rem 1rem 0.5rem;
+    }
+    #email p {
+        line-height: 1.1rem;
+        font-size: .6rem;
+        margin-bottom: 1rem;
+    }
+    .footer-info ul {
+        font-size: 0.5rem;
+    }
+    .footer-info .copyright {
+        font-size: .45rem;
+    }
+}
+
+@media screen and (min-width: 411px) and (max-width: 414px) {
+    .hero-msg h1 {
+        font-size: 1.6rem;
+    }
+    .hero {
+        padding-top: 1rem;
+        height: 275px;
+    }
+    .web-info {
+        margin-top: 3rem;
+    }
+    .team-info {
+        margin-top: 3rem;
+    }
+    .footer-info p {
+        color: #fff;
+        font-size: .5rem;
+        padding-bottom: 1rem;
+        line-height: 1rem;
+    }
+    #email {
+        margin-top: -20rem;
+        height: 329px;
+    }
+    #email p {
+        line-height: .8rem;
+        font-size: .7rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .footer-info ul {
+        padding-bottom: 2.4rem;
+        display: flex;
+        font-size: 1.2rem;
+    }
+    .footer-info .copyright {
+        font-size: 1rem;
+    }
+
+    #email p {
+        font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1.9rem;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:359px) {
+    .footer-info .copyright {
+        font-size: .4rem;
+    }
+}
+
+@media screen and (min-width: 418px) and (max-width: 487px) {
+    .course-content h4 {
+        font-size: 2rem;
+    }
+    .team-info {
+        margin-top: 1.5rem;
+    }
+    .web-info {
+        margin-top: 1.5rem;
+    }
+    .footer-info img {
+        padding-bottom: 1rem;
+        width: 120px;
+    }
+    #email {
+        margin-top: -20rem;
+        height: 330px;
+    }
+    #email p {
+        line-height: 2rem;
+        font-size: .5rem;
+        margin-bottom: 1rem;
+    }
+    .footer-info p {
+        color: #fff;
+        font-size: .4rem;
+        padding-bottom: 1.3rem;
+        line-height: 2rem;
+    }
+    
+}
+
+@media screen and (min-width: 420px) and (max-width: 609px) {
+    #left {
+        margin-right: 0rem;
+    }
+    #left, #right {
+        font-size: 1.8rem;
+        color: #fff;
+        transition: color .3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 428px) and (max-width: 588px) {
+    .welcome-area h2 {
+        font-size: 3.4rem;
+    }
+    .spacer {
+        width: 88%;
+        padding-top: 37rem;
+    }
+    .footer-info ul {
+        font-size: 0.5rem;
+    }
+}  
+
+@media only screen and (width: 488px) {
+    #email {
+        grid-column: 40/19;
+        background: #4A455C;
+        position: relative;
+        margin-top: -25rem;
+        height: 410px;
+        padding: 4rem 1rem 0.5rem;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 491px) and (max-width: 616px){
+    #email {
+        margin-top: -26rem;
+        height: 417px;
+    }
+    #email p {
+        line-height: 2rem;
+        font-size: 1rem;
+        margin-bottom: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width:417px) {
+    footer .content-wrapper {
+        margin: 0 1.5rem;
+    }
+    .footer-info img {
+        width: 116px;
+    }
+    .footer-info p {
+        font-size: .4rem
+    }
+    #email {
+        margin-top: -26rem;
+        height: 416px;
+        grid-column: 40/26;
+    }
+    #email h4 {
+        font-size: .8rem;
+    }
+    #email p {
+        font-size: .6rem;
+        margin-bottom: 6rem;
+    }
+    .footer-info .copyright {
+        font-size: .4rem;
+    }
+}
+
+@media screen and  (min-width: 417px) and (max-width: 425px) {
+    #email {
+        margin-top: -22rem;
+        height: 352px;
+    }
+}
+
+@media screen and (min-width: 610px) and (max-width: 767px) {
+    #left {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 789px) and (max-width: 832px) {
+    #email p {
+        margin-bottom: 2.8rem;
+    }
+}
+
+
+@media screen and (min-width: 510px) and (max-width: 610px) {
+
+}
+
+@media screen and (min-width: 954px) and (max-width: 1008px) {
+    .hero {
+        height: 631px;
+    }
+    
+    .hero-msg {
+        top: -14rem;
+        padding: 1rem 2.5rem 1rem;
+    }
+    
+    .hero-msg p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #fff;
+    }
+}
+
+
+@media screen and (min-width: 1009px) and (max-width: 1023px) {
+    .hero {
+        height: 625px;
+    }
+.hero-msg {
+    top: -17rem;
+    padding: 1rem 2.5rem 1rem;
+}
+.hero-msg p {
+    font-size: 1.2rem;
+}
+
+}
